@@ -1,0 +1,24 @@
+title: "📅 [오늘할일] YYYY-MM-DD | 제목"
+body:
+  - type: checkboxes
+    attributes:
+      label: 🙆‍♂️ **참여자** 👥
+      options:
+        - label: "승현(PM)"
+        - label: "정현(형상)"
+        - label: "남규(DB)"
+        - label: "관훈(DB)"
+
+  - type: textarea
+    id: improvements
+    attributes:
+      label: 🚬 **오늘 할 일** 📋
+      description: "할 일이 없으면 'X'라고 적어주세요! ✏️"
+      value: |
+        1. 🔧BECKEND : 
+        2. 💻FRONTEND : 
+        3. 🎨CSS : 
+        4. 🛠️ERROR 수정 : 
+      render: bash
+    validations:
+      required: true

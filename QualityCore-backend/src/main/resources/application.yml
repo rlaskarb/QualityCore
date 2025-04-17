@@ -1,0 +1,46 @@
+spring:
+  datasource:
+    url: jdbc:oracle:thin:@localhost:1521/XE
+    username: c##qualitycore
+    password: core
+    driver-class-name: oracle.jdbc.OracleDriver
+
+  jpa:
+    database-platform: org.hibernate.dialect.OracleDialect
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        format_sql: true
+    show-sql: true
+
+  # 이메일 설정 추가
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: answjdgus72@gmail.com  # 실제 이메일 주소로 변경
+    password: ktjpgctsxeodlrmy     # 앱 비밀번호로 변경 (Gmail의 경우)
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+            required: true
+          connectiontimeout: 5000
+          timeout: 5000
+          writetimeout: 5000
+
+  # Thymeleaf 설정 추가
+  thymeleaf:
+    cache: false
+    check-template-location: true
+    prefix: classpath:/templates/
+    suffix: .html
+    mode: HTML
+    encoding: UTF-8
+
+cloudinary:
+  cloud-name: dob4ueqsf
+  api-key: 329995789126366
+  api-secret: LUAZLDPArj1E_iqkJm5qoSYZ_T4

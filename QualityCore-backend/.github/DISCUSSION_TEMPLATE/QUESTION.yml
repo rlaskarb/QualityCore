@@ -1,0 +1,31 @@
+title: "❓ [질문] YYYY-MM-DD | 제목"
+body:
+  - type: checkboxes
+    attributes:
+      label: 🙆‍♂️ **작성자** 👨‍💻
+      options:
+        - label: "승현(PM)"
+        - label: "정현(형상)"
+        - label: "남규(DB)"
+        - label: "관훈(DB)"
+
+  - type: dropdown
+    id: download
+    attributes:
+      label: ❤ **질문 종류** ❓
+      options:
+        - "백엔드 질문"
+        - "프론트엔드 질문"
+        - "에러 관련 질문"
+        - "기타 질문"
+    validations:
+      required: true
+
+  - type: textarea
+    id: error_details
+    attributes:
+      label: 📣 **질문 내역** ✍️
+      description: "질문 내용을 간결하게 적어주세요.."
+      value: null
+    validations:
+      required: true

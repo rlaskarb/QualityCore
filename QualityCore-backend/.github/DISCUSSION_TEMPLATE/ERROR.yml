@@ -1,0 +1,40 @@
+title: "🚨 [에러] YYYY-MM-DD | 제목"
+body:
+  - type: checkboxes
+    attributes:
+      label: 🙆‍♂️ **작성자** 👨‍💻
+      options:
+        - label: "승현(PM)"
+        - label: "정현(형상)"
+        - label: "남규(DB)"
+        - label: "관훈(DB)"
+
+  - type: dropdown
+    id: download
+    attributes:
+      label: ❌ **ERROR 코드** 🚨
+      options:
+        - "404 에러"
+        - "500 에러"
+        - "백엔드 기타 에러"
+        - "프론트엔드 기타 에러"
+    validations:
+      required: true
+
+  - type: textarea
+    id: error_details
+    attributes:
+      label: 🚫 **ERROR 내역** 🔍
+      description: "발생한 에러의 자세한 내용을 적어주세요.."
+      value: null
+    validations:
+      required: true
+
+  - type: textarea
+    id: solution_details
+    attributes:
+      label: ✅ **해결방안** 🔧
+      description: "문제 해결 방안을 적어주세요.."
+      value: null
+    validations:
+      required: true
