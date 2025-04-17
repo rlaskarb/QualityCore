@@ -89,20 +89,14 @@
 | 구분 | 사용 기술 |
 |------|-----------|
 | **프레임워크 & 언어** | Java 17, Spring Boot |
-| **ORM & DB** | Spring Data JPA, MyBatis, Hibernate, OracleDB |
+| **ORM & DB** | Spring Data JPA, Hibernate, OracleDB |
 | **쿼리** | QueryDSL |
 | **템플릿 엔진** | Thymeleaf |
-| **보안 & 인증** | JWT 로그인 기능 구현 예정 (팀원 이탈로 미완성) |
 | **API 문서화** | SpringDoc OpenAPI (Swagger) |
 | **모델 매핑** | ModelMapper |
 | **웹소켓** | Spring Boot WebSocket (STOMP) |
-| **이메일 전송** | JavaMailSender (SMTP, Gmail 연동) |
-| **PDF/문서 처리** | Apache POI (Excel 처리) |
-| **파일 업로드** | Cloudinary (cloudinary-core, cloudinary-http44) |
-| **입력 검증** | Spring Validation (JSR-380) |
 | **로그 & AOP** | Lombok (@Slf4j), Spring AOP |
-| **배포 환경** | 로컬 개발 환경 (Oracle DB 기준), Railway 배포 고려 중|
-| **테스트** | JUnit, MyBatis Test |
+| **배포 환경** | 로컬 개발 환경 (Oracle DB 기준)|
 | **기타 도구** | DevTools, ojdbc8 / ojdbc11 드라이버 |
 
 <br/>
@@ -117,59 +111,23 @@
 | **라우팅** | React Router DOM |
 | **상태 관리** | useState, useEffect, useMemo, useCallback |
 | **HTTP 통신** | fetch API, axios |
-| **UI 구성** | MUI, Lucide-React, Chart.js |
 | **모달 처리** | react-modal |
 | **애니메이션** | Lottie-React, JS-Confetti |
-| **이미지 처리** | Lazy Loading, Canvas API (라벨 그리기) |
-| **파일 업로드** | Blob 변환 후 Multipart 전송 |
 | **마크다운 렌더링** | marked |
-| **사용자 인증** | Context API (useAuth) |
 | **스타일링** | CSS Modules, Flexbox 기반 레이아웃 |
-| **반응형** | Media Query (모바일 대응) |
-| **마이크로 UX** | Gradient, Hover, Shadow, Transition 효과 |
-| **기타** | 단계별 플로우 구성, 커스텀 캘린더, 공정 카드 뷰 |
 
 <br/>
-<br/>
-
-
-## ☁️ 파일 저장 & 데이터 백업
-
-| 구분 | 기술 |
-|------|------|
-| **DB 백업 & 복제** | Oracle XE (로컬 환경, 별도 복제 구성 없음) |
-
-“현재는 Oracle XE 기반 로컬 저장소에서 테스트 진행했으며, 추후 클라우드 파일 저장소 및 DB 이중화 구성을 고려 중입니다.”
-
 <br/>
 
 <hr/>
 
 <br/>
-<br/>
+
 
 
 <a name="기능-설명"></a>
 ## 📌 기능 설명
 
-
-<br/>
-
-### 생산계획
-
-<br/>
-
-<hr/>
-
-<br/>
-
-### 작업업지시
-
-<br/>
-
-<hr/>
-
-<br/>
 
 ### 🍺 생산공정 관리
 
@@ -334,6 +292,7 @@ CO₂ 농도, 탄산 공정 온도, 공정 중 압력은 기본값에 따라 자
 설정값은 제조 기준에 맞춰 최적화되어 있습니다.<br/>
 탄산 조정이 완료되면 마지막 공정으로 전환됩니다.
 
+<hr/>
 <br/>
 
 #### 패키징 및 출하
@@ -353,32 +312,9 @@ CO₂ 농도, 탄산 공정 온도, 공정 중 압력은 기본값에 따라 자
 
 출하 대기 상태가 완료되면, 작업지시 관리로 공정 상태가 넘어가며 해당 작업의 전체 공정 완료 여부를 한눈에 확인할 수 있습니다.
 
+<hr/>
 <br/>
 
----
-
-<br/>
-
-### Routing 관리
-
-<br/>
-
----
-
-<br/>
-
-### 생산실적 관리
-
-<br>
-
----
-
-
-<br/>
-<br/>
-
-
----
 
 <a name="논리--물리-데이터-모델링"></a>
 ## 📌 논리 데이터 모델링 ( 총 32개 테이블 )
@@ -387,5 +323,4 @@ CO₂ 농도, 탄산 공정 온도, 공정 중 압력은 기본값에 따라 자
 <br/>
 <br/>
 
----
 
