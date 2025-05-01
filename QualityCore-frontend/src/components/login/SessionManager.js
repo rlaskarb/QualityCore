@@ -16,8 +16,8 @@ const SessionManager = () => {
   const countdownIntervalRef = useRef(null);
   
   // 세션 타임아웃 설정 (밀리초)
-  const IDLE_TIMEOUT = 500 * 1000; // 20초 (테스트용)
-  const WARNING_DURATION = 10; // 초 단위로 경고창 표시 시간
+  // const IDLE_TIMEOUT = 500 * 1000; // 20초 (테스트용)
+  // const WARNING_DURATION = 10; // 초 단위로 경고창 표시 시간
   
   // 디버깅 모드 설정
   const DEBUG_MODE = true; // 콘솔 로그 표시 여부
