@@ -32,6 +32,7 @@
 - [기술 스택](#기술-스택)
 - [기능 설명](#기능-설명)
 - [논리 & 물리 데이터 모델링](#논리--물리-데이터-모델링)
+- [보험회사 GitHub 바로 가기](https://github.com/rlaskarb/LYNK_LIFE)
 
 <hr/>
 <br/>
@@ -315,6 +316,8 @@ CO₂ 농도, 탄산 공정 온도, 공정 중 압력은 기본값에 따라 자
 <a name="논리--물리-데이터-모델링"></a>
 ## 📌 논리 데이터 모델링 ( 총 32개 테이블 )
 <img width="100%" alt="생산 ERP 모델링" src="https://github.com/user-attachments/assets/0e366ad1-b38f-4663-a446-1cd0cfef48fa" />
+
+[🔝 맨 위로 가기](#top)
 
 <br/>
 <br/>
